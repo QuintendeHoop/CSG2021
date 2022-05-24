@@ -1,0 +1,824 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    }
+    
+    html {  
+        font-size: 20px;
+        font-family: 'Gill sans', sans-serif;
+    }
+    a {text-decoration: none;
+    }
+
+    .container{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+    
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    p {
+        color: black;
+        font-size: 50px;
+        margin-top: 5px;
+        line-height: 45px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+     .sectie-title {
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-family:  'Work Sans', sans-serif;
+        
+    }
+   
+     .sectie-title span {
+        color: goldenrod;
+    }
+    .brand h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: white;
+    }
+    .brand h1 span {
+        color: goldenrod;
+    }
+    #header {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: auto;
+    }
+    #header .header {
+        min-height: 8vh;
+        background-color: rgba(32, 40, 30, 0.24);
+        transition: 0.3s ease background-color;
+    }
+    #header .nav-bar {
+        display: inline-block;
+        align-items:baseline;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        max-width: 1980px;
+        padding: 0 10px;
+        color: white;
+    }
+    #header .nav-list ul a {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px;
+        display: block;
+    }
+  
+    
+    
+    body{
+        background-color: black;
+    }
+    
+   
+   
+    
+        
+       
+   
+
+    
+   /* beginpagina sectie*/
+   #beginpage{ 
+       background-image: url(images/overrule1.jpeg);
+       background-size: cover;
+       background-position: top center;
+       position: relative;
+       z-index: 1;
+   }
+   #beginpage::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: -1.5;
+  
+}
+   #beginpage .beginpage { 
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 50px;
+justify-content:left;
+   }
+  
+   #beginpage h1 {
+  display: block;
+  width: fit-content;
+  font-size: 50px;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 1s ease forwards ;
+  color: goldenrod;
+  
+
+
+}
+#beginpage h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    width: 0%;
+    background: goldenrod;
+    animation: text_reveal_box 2s ease;
+    animation-delay: 1s;
+}
+   
+   #beginpage .cta{
+    display: inline-block;
+    padding: 5px 15px;
+    color: gold;
+    background-color: transparent;
+    border: 8px solid gold;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: 0.5s;
+    transition-property: background-color, color;
+    
+
+   }
+   #beginpage .cta:hover{
+       color: gold;
+       background-color: black;
+      
+   }
+       /*einde beginpagina */
+
+   
+
+    /* beginpagina sportfanaten sectie*/   
+#sportfanaten .sportfanaten{
+    flex-direction: column;
+    text-align:  center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#sportfanaten .sportfanaten-top p{
+    font-size: 20px;
+    margin-top: 5px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: px;
+    
+}
+#sportfanaten .sportfanaten-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#sportfanaten .sportfanaten-item {
+    flex-basis: 90%;
+    display: flex ;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url(./images/goud.jpg);
+    background-size: cover;
+    margin: 10px 5% ;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   
+    
+
+}
+#sportfanaten .sportfanaten::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1.4;
+
+}
+#sportfanaten .sportfanaten-bottom .icon{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 20px;
+
+}
+
+#sportfanaten .sportfanaten-item h2{
+    font-size: 80px;
+    color: black;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+#sportfanaten .sportfanaten-item p{
+   
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+ /*einde beginpagina sportfanaten */
+
+
+ /* beginpagina producten sectie*/  
+#producten .producten{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#producten .producten-header h1{
+    margin-bottom: 50px;
+}
+   #producten .alle-producten{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+   #producten .producten-item{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       width: 80%;
+       margin:20px auto;
+       overflow: hidden;
+       border-radius: 100px;
+   }
+ #producten .producten-extra{
+     padding: 30px;
+     flex-basis: 50%;
+     background-color: white;
+     height: 100%;
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+     flex-direction: column;
+     background-image:linear-gradient(45deg, goldenrod, gold);
+     color: black;
+     
+ }
+
+#producten .producten-extra h1{
+    font-size: 50px;
+    font-weight: 500;
+    font-family:"Tahoma", Times, serif;
+}
+
+#producten .producten-extra h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color:red;
+    font-family: cursive;
+}
+
+#producten .producten-extra p{
+    color: black;
+}
+
+#producten .producten-img{
+    flex-basis: 50%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+#producten .producten-img:after {
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(90deg, goldenrod 0 20%, white 60% 100%); 
+    opacity: 0.1;
+
+}
+#producten .producten-img img{
+    transition: .5s ease transform;
+}
+  #producten .producten:hover .producten-img img{
+      transform: scale(1.5);
+  }
+  /*einde beginpagina producten */
+
+/* beginpagina contact sectie*/ 
+ 
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+    background-color: white;
+    
+}
+
+
+#contact h1{
+    color:black
+}
+#contact .contact-items {
+	
+	width: 100%;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+	font-size: 60px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	width: 110px;
+	margin: 0 auto;
+	margin-bottom: 10px; 
+    height: 80px;
+}
+ /*einde beginpagina contact */
+
+  /*begin footer */
+#footer {
+    background-image:linear-gradient(180deg, white 20% 20%, goldenrod 60% 70%);
+}
+
+#footer .footer{
+    min-height: 400px;
+    flex-direction: column;
+   
+}
+
+#footer  h1{
+    font-size: 60px;
+	font-weight: 500;
+    color: black;
+}
+#footer  h2{
+    font-size: 60px;
+	font-weight: 500;
+    color: black;
+   
+}
+
+#footer h2 span{
+    color: white;
+}
+
+/*einde footer */
+
+/*beginpage text hover reveal */
+@keyframes text_reveal_box{
+      5%{
+          width: 100%;
+          left: 0;
+  }
+  100%{ 
+      width: 0;
+      left: 0%
+  }
+  }
+
+  @keyframes text_reveal{
+      100% {
+          color: white;
+      }
+    }
+      @keyframes text_reveal_name {
+        100% {
+            color: blue;
+            font-weight: 500px;
+        }
+
+   
+    }
+    /* eind beginpage text hover reveal */
+        
+    /* begin headers meerdere html pages */
+    #header2 {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: auto;
+    }
+    #header2 .header2 {
+        min-height: 8vh;
+        background-color: white;
+        transition: 0.3s ease background-color;
+    }
+    #header2 .nav-bar {
+        display: inline-block;
+        align-items:baseline;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+        max-width: 1980px;
+        padding: 0 10px;
+        color: white;
+    }
+    #header2 .nav-list ul a {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        padding: 9px;
+        display: block;
+        
+        
+    }
+    #header2 .brand h1{
+        color: black;
+    }
+/* eind headers meerdere html pages */
+   
+/* begin over mij html pages */
+    #over.over {
+        flex-direction: column;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 400px 50px;
+       
+        
+    }
+    #over .col-left {
+        width: 350px;
+        height: 4000px;
+    }
+    #over .col-right {
+        width: 100%;
+    }
+    #over h2  {
+        color: white;
+    }
+    #over .col-right h2 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #over .col-right p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    
+    }
+    #over .col-left .over-img {
+        margin-top: 30px ;
+        height: 140%;
+        width: 100%;
+        position: relative;
+        border: 14px solid white;
+    }
+    
+    
+    #over .over {
+        flex-direction: row;
+    }
+    #over .col-left {
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    
+    #over .col-right {
+        text-align: left;
+        padding: 50px;
+        
+    }
+    #over .about {
+        flex-direction: row;
+    }
+    
+    
+    #over .col-right {
+        text-align: left;
+        padding: 30px;
+    }
+    #over h1 span {
+        color: white;
+    }
+    #over .sectie-title{
+    color:goldenrod;
+    margin-top: 300px;
+    }
+
+    #over .col-right p{
+   color: white;
+        font-size: 20px;
+        margin-top: 8px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    #over .col-right .over-img {
+        margin-top: 30px ;
+        height: 20%;
+        width: 10%;
+        position: relative;
+        border: 3px solid goldenrod;
+        background-color: white;
+        
+    }
+
+
+    /* eind over mij */
+
+
+    /* begin producten */
+    #Producten {
+        padding-top: 250px;
+        background-color: white;
+        padding-bottom: 20px;
+    }
+    .Producten__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .Producten__left {
+        display: flex;
+        gap: 5px;
+    }
+    .Producten__item {
+       
+        padding: 5px;
+        padding-top: 5px;
+        border-radius: 12px;
+        width: 45%;
+        margin: 0 auto;
+    }
+    .Producten__item__img {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        height: 850px;
+        overflow: hidden;
+        border: 4px solid black;
+        width: 750px;
+    }
+    .Producten__item__img img {
+        object-fit: cover;
+    }
+    .Producten__item__title {
+        font-size: 30px;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+    .Producten__item__price {
+        color: black;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: goldenrod;
+    }
+    .Producten__item__stars {
+        height: 28px;
+        width: max-content;
+        margin-bottom: 9px;
+    }
+    .Producten__item__text {
+        font-size: 22px;
+        color: black;
+        font-weight: 500;
+    }
+    .Producten__title {
+        font-size: 20pxrem;
+        margin-bottom: 10px;
+        color: black;
+    }
+    .Producten__text {
+        font-size: 25px;
+        color: black;
+        margin-bottom: 10px;
+    }
+    /* eind producten */
+    
+   
+    /* begin coaching */
+    #Coaching {
+        padding-top: 300px;
+        background-color: black;
+    }
+    .Coaching__wrapper {
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .Coaching__item {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+    }
+   
+    .Coaching__item__img {
+        border-radius: 12px;
+        overflow: hidden;
+        flex: 3;
+        height: 800px;
+        width: 700px;
+        border: 6px solid goldenrod;
+        
+    }
+    .Coaching__item__info {
+        flex: 4;
+    }
+    .Coaching__item__img img {
+        object-fit: cover;
+    }
+    .Coaching__item__title {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: goldenrod;
+        
+    }
+    .Coaching__item__text {
+        font-size: 30px;
+        color: black;
+        border: 4px solid white;
+        color: white;
+    }
+    .Coaching__right {
+        margin-top: 20px;
+    }
+    .Coaching__title {
+        font-size: 40px;
+        color: goldenrod;
+        margin-bottom: 20px;
+    }
+    .Coaching__text {
+        color: whitesmoke;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    /* eind coaching */
+    
+
+    /* begin contact page */
+    .container3{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 100px;
+        margin-top:230px;
+        background-color: goldenrod;
+    }
+    
+    .container3:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url("img/bg.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(50px);
+        z-index: -1;
+    }
+    
+    .contact-box{
+        max-width:1000px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 19px 5px rgba(167, 9, 9, 0.19);
+    }
+    
+    .left{
+        background: url(images/quinten2.jpeg) no-repeat center;
+        background-size: cover;
+        height: 80%;
+        width: 100%;
+        opacity: 2.5;
+        z-index: -0.5;
+        
+        
+    }
+    
+    .right{
+        padding: 25px 40px;
+    }
+    
+    h2{
+        position: relative;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+    }
+    
+   
+    
+    .layout{
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        outline: none;
+        background-color: rgba(230, 230, 230, 0.6);
+        padding: 10px 10px;
+        font-size: 24px;
+        margin-bottom: 22px;
+        transition: .3s;
+    }
+    
+    .layout:hover{
+        background-color: rgba(185, 7, 7, 0.1);
+    }
+    
+    textarea{
+        min-height: 150px;
+    }
+    
+    .knop{
+        width: 100%;
+        padding: 10px 10px;
+        background-color: goldenrod;
+        color: #fff;
+        font-size: 27px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    .knop:hover{
+        background-color: goldenrod;
+    }
+    
+    .layout:focus{
+        border: 5px solid goldenrod;
+        background-color: white(5, 5, 5);
+    }
+    /* eind contact page */
+   
